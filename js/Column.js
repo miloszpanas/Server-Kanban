@@ -1,9 +1,8 @@
 function Column(id, name) {
-	var self = this;
-	
-	this.id = id;
-	this.name = name || 'No name given';
-	this.element = createColumn();
+    this.id = id;
+    this.name = name || 'No name given';
+    this.element = createColumn();
+}
 
 	function createColumn() {
 		// TWORZENIE NOWYCH WĘZŁÓW
@@ -42,7 +41,6 @@ function Column(id, name) {
 			.append(columnCardList);
 			return column;
 		}
-	}
 Column.prototype = {
 	createCard: function(card) {
 	  this.element.children('ul').append(card.element);
