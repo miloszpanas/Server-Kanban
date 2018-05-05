@@ -11,7 +11,7 @@ function Card(id, name) {
 		var cardDescription = $('<p class="card-description"></p>');
 		
 		cardDeleteBtn.click(function(){
-			self.removeCard();
+		self.removeCard();
 		});
 		
 		card.append(cardDeleteBtn);
